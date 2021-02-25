@@ -4,7 +4,7 @@ Rain simulation
 ===============
 
 Simulates rain drops on a surface by animating the scale and opacity
-of 50 scatter points.
+of ep51to100 scatter points.
 
 Author: Nicolas P. Rougier
 """

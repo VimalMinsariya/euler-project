@@ -6,7 +6,7 @@ def aton(letter):
     result = ord(letter.lower()) - ord('a') + 1
     return result
 
-words = open('p042_words.txt','r').read().split(',')
+words = open('p042_words.txt', 'r').read().split(',')
 # words=['"sky"','"ksnnxksu"']
 
 cnt = 0
