@@ -20,3 +20,5 @@
 #192 : stern-brocot tree, farey sequence, continued fraction -> cut-the-knot
 
 깃허브 테스트
+
+#137, #140 일반적인 펠 방정식 풀이.
