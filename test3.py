@@ -1,15 +1,6 @@
-import time
-
-a = 2**25
+rankvalues = dict((r,i) for i,r in enumerate('..23456789TJQKA'))
+a = ((r,i) for i,r in enumerate('..23456789TJQKA'))
+for i in a:
+    print(i)
 print(a)
-test = '2'
-while test != '1':
-    N = 10**int(input())
-    start = time.time()
-    n = 1
-    sum = 0
-    while n < N:
-        sum += n
-        n += 1
-    print(N, sum)
-    print(time.time() - start)
+print(rankvalues)
