@@ -19,24 +19,13 @@ num_s = '73167176531330624919225119674426574742355349194934\
 05886116467109405077541002256983155200055935729725\
 71636269561882670428252483600823257530420752963450'
 
-num=[]
-
-for i in range(1000):
-    num.append(int(num_s[i]))
-
-def prod_tt(i):
-    sol=1
-    for k in range(i,i+13):
-       sol *= num[k]
-    return sol
-
-max=prod_tt(0)
-for i in range(987):
-    if prod_tt(i)>max:
-        max = prod_tt(i)
-        t=i
-
-print(t)
-for i in range(13):
-    print(num[t+i],end=' ')
-print("\nmax= ",max)
+p, max = 0, 0
+while p+13 < len(num_s):
+    product = 1
+    for n in num_s[p:p+13]:
+        product *= int(n)
+    if product > max:
+        position = p
+        max = product
+    p += 1
+print(max, num_s[position:position+13])
