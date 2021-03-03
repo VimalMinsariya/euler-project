@@ -1,3 +1,3 @@
-a = [1,3,7]
-c,*d = a
-print(c,d)
+a = '2345'
+b = sorted(a)
+print(b)
