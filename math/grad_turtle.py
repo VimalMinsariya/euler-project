@@ -1,5 +1,6 @@
 import turtle
-
+import sys
+print(sys.version) #한글은 문제 없지요
 turtle.setworldcoordinates(0,-2560,2560,0)
 bob = turtle.Turtle()
 bob.speed(0)
@@ -11,9 +12,8 @@ for r in range(255):
         bob.color(r,g,0)
         bob.setx(g*10)
         bob.begin_fill()
-        for i in range(4):  # 사각형이므로 4번 반복
+        for i in range(4):
             bob.forward(10)
             bob.right(90)
         bob.end_fill()
-
 turtle.done()
