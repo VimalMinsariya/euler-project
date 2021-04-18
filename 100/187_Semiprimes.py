@@ -20,6 +20,5 @@ for start in range(l):
     while h*primes[tail] >= N:
         tail -= 1
     cnt += tail - start + 1
-    k = math.log10(start+1)
 
 print(cnt)
