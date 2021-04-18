@@ -12,7 +12,6 @@ def prime_seive(n):
 N =10**8
 primes = prime_seive(N)
 l = len(primes)
-print('ok',l)
 tail = l-1
 cnt = 0
 for start in range(l):
@@ -22,5 +21,5 @@ for start in range(l):
         tail -= 1
     cnt += tail - start + 1
     k = math.log10(start+1)
-    if k == int(k): print(start+1)
+
 print(cnt)
